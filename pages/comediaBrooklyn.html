@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="generator" content="Astro v1.8.0" />
+    <meta
+      name="description"
+      content="En este sitio encontraras las mejores series y peliculas en la mejor calidad. Desde el cine a tu casa."
+    />
+    <meta
+      name="keywords"
+      content="series, peliculas, ver online, generos, terror,suspenso, comedia, drama, misterio, mejor precio, "
+    />
+    <meta
+      name="author"
+      content="Rodriguez Yanina, Joaquin Andrada, Maximiliano Vega, Azul De Pol, Cristian Gramajo"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shorcut icon" href="../assets/img/favicon.ico" />
+    <title>Nesflis - Brooklyn Precinto 99</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-expand-sm justify-sm-content-center fixed-top"
+      >
+        <div class="container-fluid">
+          <!-- logo principal -->
+          <div class="order-1 order-sm-1 order-md-0 me-sm-6">
+            <a class="navbar-brand logoNes" href="../index.html"
+              ><img
+                src="../assets/img/Logo-del-sitio.png"
+                alt="Logo principal del sitio"
+                width="94px"
+                class="m-0"
+            /></a>
+          </div>
+          <!-- boton hambueguesa -->
+          <div class="order-0 order-sm-0 order-md-1 my-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./peliculas.html">Peliculas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu navbar-dark bg-dark">
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Mi lista</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./accion.html"
+                        >Acción</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./comedia.html"
+                        >Comedia</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Terror</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Drama</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Suspenso</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Documentales</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Romance</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Anime</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <form class="d-flex me-2 inputdeBusqueda" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btnNavbar btn-outline-danger"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <!-- inicio de sesion y suscripcion- boton -->
+          <div class="order-2 order-md-2 mb-xs-1 mt-sm-2 text-end">
+            <a
+              href="./login.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Iniciar sesion</a
+            >
+            <a
+              href="./suscripcion.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Registrarse</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid main-margin-top">
+      <section
+        id="serie_seleccionada"
+        class="serie-seleccionada-section d-flex justify-content-center text-aling-end mb-5"
+      >
+        <article>
+          <img
+            src="../assets/NesFlisImg/B99main.jpeg"
+            alt="Brooklyn Precinto 99"
+            class="img-fluid"
+          />
+        </article>
+        <article class="banner-info row text-white align-items-center mt-2">
+          <div class="row d-flex aling-items-end m-4" style="height: 30rem">
+            <aside
+              class="n-serie col-sm-10 col-md-8 col-lg-6 col-12 rgba-dark-1"
+              style="height: 20rem"
+            >
+              <h2>Comedias</h2>
+              <h1>Brooklyn, Precinto 99</h1>
+              <h3>Ver la temporada 1</h3>
+              <p class="font-weight-bold h5 mb-4">
+                Este brillante detective de Brooklyn deberá aprender a seguir
+                las normas y trabajar en equipo con la llegada de un nuevo
+                capitán.
+              </p>
+              <div class="container-fluid">
+                <ul class="barraDetalles list-unstyled">
+                  <li class="text-success">98% para ti</li>
+                  <li>2013</li>
+                  <li style="border: 0.1em solid grey; padding: 2px">13+</li>
+                  <li>
+                    <i class="bi bi-collection-play text-secondary"></i> 8
+                    temporadas
+                  </li>
+                  <li style="border: 0.1em solid grey; padding: 2px">HD</li>
+                </ul>
+              </div>
+            </aside>
+            <aside
+              class="d-none d-md-flex n-serie offset-md-none col-md-4 justify-content-end"
+              style="height: 20rem"
+            >
+              <div class="d-flex align-items-center text-white">
+                <button
+                  class="p-3 m-2 rounded-circle text-white bg-dark"
+                  style="height: 3em"
+                >
+                  ⟳
+                </button>
+                <div
+                  class="p-4 m-2 bg-dark"
+                  style="border-left: 0.2em solid #fff"
+                >
+                  16+
+                </div>
+              </div>
+            </aside>
+          </div>
+        </article>
+      </section>
+      <div class="row">
+        <section class="col-12 col-md-6 vh-100 text-white rounded">
+          <article class="rounded border border-3 p-4 bg-dark text-white">
+            <h5 class="text-secondary">Elenco</h5>
+            <ul>
+              <li>Andy Samberg</li>
+              <li>Andre Braugher</li>
+              <li>Stephanie Beatriz</li>
+              <li><i>más</i></li>
+              <br />
+            </ul>
+            <h5 class="text-secondary">Géneros</h5>
+            <ul>
+              <li>Comedias de TV</li>
+              <li>Sitcoms</li>
+              <li>Series sobre crímenes</li>
+              <br />
+            </ul>
+            <h5 class="text-secondary">Escrito y creado por:</h5>
+            <ul>
+              <li>Michael Schur</li>
+              <li>Daniel J. Goor</li>
+            </ul>
+            <h5 class="text-secondary">Este título es:</h5>
+            <ul>
+              <li>Disparatado</li>
+            </ul>
+          </article>
+        </section>
+        <section class="col-12 col-md-6 vh-100 mb-5">
+          <div class="scroll roll-box-y vh-100 p-3">
+            <article>
+              <div>
+                <h2 class="text-white">Temporada 1</h2>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e1.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>1. Piloto</h3>
+                    <p>
+                      Cuando el capitán Holt queda a cargo de la estación, el
+                      detective Jake Peralta y sus compañeros disfuncionales
+                      enfrentarán nuevas exigencias.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e2.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>2. El grafitero</h3>
+                    <p>
+                      Jake llega tarde y, como castigo, deberá resolver un caso
+                      por debajo de su nivel.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e3.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>3. El bajón</h3>
+                    <p>
+                      Se apilan los casos sin resolver de Jake, y los demás
+                      detectives temen que sea contagioso. Mientras tanto, Amy
+                      debe dirigir un programa de jóveneds en riesgo.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e4.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>4. Un rato con la forense</h3>
+                    <p>
+                      El equipo se pone en contra de Jake porque atrasó el
+                      informe de la autopsia al coquetear con la médica forense,
+                      que termina siendo más de lo que preveía.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e5.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>5. El Buitre</h3>
+                    <p>
+                      Un detective de Delitos Mayores le saca a Jake el caso que
+                      estaba por resolver y se lleva los laureles, asi que él
+                      buscará vengarse como sea.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e6.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>6. Halloween</h3>
+                    <p>
+                      Amy detesta Halloween. Y aún más cuando tiene que ponerse
+                      un disfraz y salir a la calle llena de gente junto a
+                      Charles.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e7.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>7. 48 Horas</h3>
+                    <p>
+                      Jake hizo un arresto con pocas pruebas, y ahora él y el
+                      equipo tienen 48 horas para juntar evidencias durante el
+                      fin de semana... o el delicuente quedará libre.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e8.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>8. La vieja escuela</h3>
+                    <p>
+                      El día soñado de Jake con su ídolo termina convirtiéndose
+                      en una pesadilla cuando sus comentarios sobre Holt y la
+                      estación policial quedan expuestos.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e9.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>9. Pizza de Sal</h3>
+                    <p>
+                      Cuando la pizzería favorita de Jake se incendia y el jefe
+                      de bomberos sospecha del dueño, Jake intenta atrapar al
+                      verdadero pirómano, aunque no le corresponda.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+                <div class="row desc-card my-2">
+                  <div class="col-12 col-md-4 p-2">
+                    <img
+                      src="../assets/NesFlisImg/s1e10.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <div class="col-12 col-md-8 p-2">
+                    <h3>10. Acción de Gracias</h3>
+                    <p>
+                      Amy invita a todos sus colegas a una cena de Acción de
+                      Gracias para wue Holt se convierta en su mentor, pero Holt
+                      se va antes con Jake... y la comida es asquerosa.
+                    </p>
+                    <br />
+                    <p class="text-secondary">21 min</p>
+                    <br />
+                    <button class="btn btn-secondary btn-sm">Reproducir</button>
+                    <button class="btn btn-secondary btn-sm">
+                      Agregar a Favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="row">
+          <h2 class="text-white mb-1">Más títulos similares a este</h2>
+          <aside class="col-md-4 col-lg-3 mb-3">
+            <article class="card h-100 bg-dark text-white">
+              <img
+                src="../assets/NesFlisImg/TheGoodPlace300x200px.jpg"
+                class="card-img-top"
+                alt="The Good Place comedia"
+              />
+              <div>
+                <ul class="d-flex flex-wrap list-unstyled mt-4">
+                  <li class="text-success fw-bold mx-2">98% para ti</li>
+                  <li class="mx-2">2016</li>
+                  <li class="mx-2">13+</li>
+                  <i class="bi bi-bookmark-check"></i>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Good Place</h5>
+                <p class="card-text">
+                  Cuatro personas y sus dificultades para saber lo que
+                  verdaderamente significa ser bueno en la vida despues de la
+                  muerte.
+                </p>
+              </div>
+              <div class="px-3 pb-2">
+                <a href="./error404.html" class="btn btn-secondary w-100"
+                  >Ver más</a
+                >
+              </div>
+            </article>
+          </aside>
+          <aside class="col-md-4 col-lg-3 mb-3">
+            <article class="card h-100 bg-dark text-white">
+              <img
+                src="../assets/NesFlisImg/TheRookie300x200px.jpg"
+                class="card-img-top"
+                alt="The Rookie comedia"
+              />
+              <div>
+                <ul class="d-flex flex-wrap list-unstyled mt-4">
+                  <li class="text-success fw-bold mx-2">94% para ti</li>
+                  <li class="mx-2">2018</li>
+                  <li class="mx-2">13+</li>
+                  <i class="bi bi-bookmark-check"></i>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Rookie</h5>
+                <p class="card-text">
+                  Volver a empezar es difícil para John Nolan quien, tras un
+                  incidente que le cambió la vida, persigue su sueño de
+                  convertirse en policía.
+                </p>
+              </div>
+              <div class="px-3 pb-2">
+                <a href="./error404.html" class="btn btn-secondary w-100"
+                  >Ver más</a
+                >
+              </div>
+            </article>
+          </aside>
+          <aside class="col-md-4 col-lg-3 mb-3">
+            <article class="card h-100 bg-dark text-white">
+              <img
+                src="../assets/NesFlisImg/Community300x200px.jpg"
+                class="card-img-top"
+                alt="Community comedia"
+              />
+              <div>
+                <ul class="d-flex flex-wrap list-unstyled mt-4">
+                  <li class="text-success fw-bold mx-2">80% para ti</li>
+                  <li class="mx-2">2009</li>
+                  <li class="mx-2">13+</li>
+                  <i class="bi bi-bookmark"></i>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Community</h5>
+                <p class="card-text">
+                  Cuando se descubre que su diploma de abogado es falso, Jeff
+                  Winger vuelve a la universidad y forma un grupo de marginados.
+                </p>
+              </div>
+              <div class="px-3 pb-2">
+                <a href="./error404.html" class="btn btn-secondary w-100"
+                  >Ver más</a
+                >
+              </div>
+            </article>
+          </aside>
+          <aside class="col-md-4 col-lg-3 mb-3">
+            <article class="card h-100 bg-dark text-white">
+              <img
+                src="../assets/NesFlisImg/SchittsCreek.jpeg"
+                class="card-img-top"
+                alt="Schitt's Creek"
+              />
+              <div>
+                <ul class="d-flex flex-wrap list-unstyled mt-4">
+                  <li class="text-success fw-bold mx-2">72% para ti</li>
+                  <li class="mx-2">2015</li>
+                  <li class="mx-2">13+</li>
+                  <i class="bi bi-bookmark"></i>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Schitt's Creek</h5>
+                <p class="card-text">
+                  El magnate Johnny Rose y su familia se ven arruinados y tienen
+                  que abandonar sus acomodadas vidas y empezar de nuevo en
+                  Schitt's Creek.
+                </p>
+              </div>
+              <div class="px-3 pb-2">
+                <a href="./error404.html" class="btn btn-secondary w-100"
+                  >Ver más</a
+                >
+              </div>
+            </article>
+          </aside>
+        </section>
+      </div>
+    </main>
+    <footer class="pe-3 mb-0">
+      <section class="container text-secondary">
+        <div class="row">
+          <aside class="col-12 col-md-12 fs-2 row">
+            <div class="col-lg-2 col-md-4 mt-4">
+              <a
+                href="../index.html"
+                class="link-secondary display-3 text-decoration-none"
+                ><img
+                  src="../assets/img/Logo-del-sitio.png"
+                  alt="logo del sitio"
+                  width="160px"
+              /></a>
+            </div>
+            <div class="col-lg-10 col-md-8 mt-lg-2 pt-md-5">
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-1"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </aside>
+        </div>
+        <div class="row mt-2">
+          <aside class="col-md-4 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-3">
+                <a
+                  href="./contacto.html"
+                  class="link-secondary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./quienessomos.html"
+                  class="link-secondary text-decoration-none"
+                  >¿Quienes somos?</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-4 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-lg-3 mt-sm-2">
+                <a href="./error404.html" class="link-secondary text-decoration-none"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+              <li class="mt-3">
+                <a href="./error404.html" class="link-secondary text-decoration-none"
+                  >Terminos y condiciones</a
+                >
+              </li>
+              <li class="mt-3">
+                <a href="./error404.html" class="link-secondary text-decoration-none">Ayuda</a>
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-4 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="./error404.html">
+                  <img
+                    src="../assets/badge-apple-store.svg"
+                    alt="link de descarga de aplicacion rn apple store"
+                  />
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="./error404.html">
+                  <img
+                    src="../assets/google-play-badge-bb.svg"
+                    alt="link de descarga de aplicacion en playstore"
+                  />
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

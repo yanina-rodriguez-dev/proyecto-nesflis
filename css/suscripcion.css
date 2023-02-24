@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  html,
+  body {
+      background-color: #000;
+  }
+nav{
+  display:block;
+  background-color: black !important;
+}
+.main-margin-top{
+  margin-top:65px;
+}
+  .logoPrincipal {
+    border: 1px white;
+    justify-content: center;
+  }
+  .btnNavbar {
+    color: white;
+    background-color: #e50914;
+  }
+  .inputdeBusqueda {
+    background-color: #222222;
+  }
+  footer {
+    background: #222222;
+  }
+  .fondodeacceder{
+    background-image: url(../assets/img/login-fondo.jpg);
+  }
+  .contenedorformularioAcceso {
+  background-color: hsla(0, 2%, 8%, 0.773);
+  }
+  .btnRed{
+      color: white;
+      background: #e50914;
+      filter: grayscale(0%);
+  }
+  .btnRed :hover{
+    filter:grayscale(30%);
+  transition: 550ms;
+  }
+  @media all and (max-width: 767px){
+  main{
+    background: #060606;
+  }
+  .navFijo{
+    position:fixed;
+    width: 100%;
+   }
+  }
+  
+  footer{
+    background: #060606;;
+  }
+  
+  .efectocursor{
+    filter: none;
+  }.dropdown-item:hover {
+    color: #303030!important;
+}

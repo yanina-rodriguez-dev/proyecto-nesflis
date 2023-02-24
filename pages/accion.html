@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En este sitio encontraras las mejores series y peliculas en la mejor calidad. Desde el cine a tu casa."
+    />
+    <meta
+      name="keywords"
+      content="series, peliculas, ver online, generos, terror,suspenso, comedia, drama, misterio, mejor precio, "
+    />
+    <meta
+      name="author"
+      content="Rodriguez Yanina, Joaquin Andrada, Maximiliano Vega, Azul De Pol, Cristian Gramajo"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shorcut icon" href="../assets/img/favicon.ico" />
+    <title>Nesflis - Películas</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-expand-sm justify-sm-content-center fixed-top"
+      >
+        <div class="container-fluid">
+          <!-- logo principal -->
+          <div class="order-1 order-sm-1 order-md-0 me-sm-6">
+            <a class="navbar-brand logoNes" href="../index.html"
+              ><img
+                src="../assets/img/Logo-del-sitio.png"
+                alt="Logo principal del sitio"
+                width="94px"
+                class="m-0"
+            /></a>
+          </div>
+          <!-- boton hambueguesa -->
+          <div class="order-0 order-sm-0 order-md-1 my-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./peliculas.html">Peliculas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu navbar-dark bg-dark">
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Mi lista</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./accion.html"
+                        >Acción</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./comedia.html"
+                        >Comedia</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Terror</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Drama</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Suspenso</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Documentales</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Romance</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="./error404.html"
+                        >Anime</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <form class="d-flex me-2 inputdeBusqueda" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btnNavbar btn-outline-danger"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <!-- inicio de sesion y suscripcion- boton -->
+          <div class="order-2 order-md-2 mb-xs-1 mt-sm-2 text-end">
+            <a
+              href="./login.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Iniciar sesion</a
+            >
+            <a
+              href="./suscripcion.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Registrarse</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container my-4 my-md-4 my-lg-4 main-margin-top">
+      <h1 class="text-white pt-3">Acción</h1>
+      <hr />
+      <section class="row mb-3">
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a
+              href="./accionEnola.html"
+              class="text-decoration-none text-white"
+            >
+              <img
+                src="../assets/NesFlisImg/EnolaHolmes2300x200px.jpg.png"
+                class="card-img-top"
+                alt="Enola Holmes 2 película"
+              />
+            </a>
+            <div class="card-body text-white p-2">
+              <a href="./accionEnola.html" class="nav-link">
+                <h5 class="card-title p-1">Enola Holmes 2</h5>
+              </a>
+              <p class="card-text px-1">
+                Enola acepta su primer caso oficial como detective, pero
+                necesitará la ayuda de sus amigos - y a su hermano Sherlock -
+                para resolver el misterio.
+              </p>
+            </div>
+            <div>
+              <a href="./accionEnola.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./accionEnola.html"
+              ><img
+                src="../assets/NesFlisImg/KnivesOut300x200px.jpg"
+                class="card-img-top"
+                alt="Entre navajas y secretos película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Entre navajas y secretos</h5>
+              </a>
+              <p class="card-text px-1">
+                Un detective explora la densa red de secretos y mentiras en
+                torno a la muerte de un famoso escritor de novelas policiales y
+                a su excéntrica y perturbadora familia.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/Kingsman300x200.jpg"
+                class="card-img-top"
+                alt="Kingsman: El Servicio Secreto película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Kingsman: El Servicio secreto</h5>
+              </a>
+              <p class="card-text px-1">
+                Una organización de espionaje recluta a un chico de la calle
+                para su programa de entrenamiento al mismo tiempo en que un
+                villano amenaza con atacar al planeta.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/AlertaRoja300x200.jpeg"
+                class="card-img-top"
+                alt="Alerta Roja película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Alerta Roja</h5>
+              </a>
+              <p class="card-text px-1">
+                A regañadientes, un perfilador del FBI hace equipo con el ladrón
+                de arte más buscado del mundo para atrapar a una delincuente que
+                siempre consigue ir un paso por delante.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/JasonBourne.jpeg"
+                class="card-img-top"
+                alt="Jason Bourne película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Jason Bourne</h5>
+              </a>
+              <p class="card-text px-1">
+                Nuevamente este antiguo espía perseguido por el Gobierno debe
+                enfrentarse a un malvado plan cibernético y resolver el misterio
+                que rodea la muerte de su padre.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/KickAss.jpeg"
+                class="card-img-top"
+                alt="Kick-ass película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Kick-ass</h5>
+              </a>
+              <p class="card-text px-1">
+                Inspirado por un libro de historietas, el estudiante de
+                secundaria Dave Lizewski se transforma en justiciero enmascarado
+                y se convierte en una sensación en internet.
+              </p>
+              <br /><br />
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/tenet.jpeg"
+                class="card-img-top"
+                alt="Tenet película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Tenet</h5>
+              </a>
+              <p class="card-text px-1">
+                Un agente encubierto debe recuperar un arma misteriosa y
+                poderosa para parar una guerra temporal que podría destruir al
+                mundo.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/JuegosdelHambre300x200.jpg"
+                class="card-img-top"
+                alt="Los Juegos del Hambre película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Los Juegos del Hambre</h5>
+              </a>
+              <p class="card-text px-1">
+                En un mundo post-apocalíptico, Katniss y Peeta representan a su
+                distrito en una competencia televisada en la que cada
+                participante lucha contra la muerte.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/Limitless300x200.jpg"
+                class="card-img-top"
+                alt="Limitless película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Limitless</h5>
+              </a>
+              <p class="card-text px-1">
+                Con su carrera como escritor hundiéndose, Eddie Morra le da un
+                giro a su vida después de tomar una droga que proporciona un
+                enfoque mental asombroso. Ve todo lo que quieras.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/LosIlusionistas2300x200.jpeg"
+                class="card-img-top"
+                alt="Los Ilusionistas 2 película"
+            /></a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Los ilusionistas 2</h5>
+              </a>
+              <p class="card-text px-1">
+                Con un nuevo miembro en el equipo, los cuatro jinetes usan sus
+                poderes de ilusión en una estafa que implica a un magnate y a un
+                revolucionario dispositivo tecnológico.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html"
+              ><img
+                src="../assets/NesFlisImg/JohnWick2300x200.jpeg"
+                class="card-img-top"
+                alt="John Wick película"
+              />
+            </a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">John Wick</h5>
+              </a>
+              <p class="card-text px-1">
+                Obligado a saldar una deuda del pasado, John Wick comete un
+                asesinato en contra de su voluntad y después se enfrenta a una
+                traición.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html">
+              <img
+                src="../assets/NesFlisImg/Jumanji2300x200.jpg"
+                class="card-img-top"
+                alt="Jumanji película"
+              />
+            </a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">Jumanji</h5>
+              </a>
+              <p class="card-text px-1">
+                Dos hermanos descubren un juego de mesa encantado que abre la
+                puerta a un mundo mágico y, sin querer, liberan a un hombre que
+                ha estado atrapado ahí durante años.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.html" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-4 col-lg-3 mb-3">
+          <article class="card h-100 bg-transparent">
+            <a href="./error404.html">
+              <img
+                src="../assets/NesFlisImg/ElHombreGris300x200.jpg"
+                class="card-img-top"
+                alt="El Hombre Gris película"
+              />
+            </a>
+            <div class="card-body text-white p-2">
+              <a href="./error404.html" class="nav-link">
+                <h5 class="card-title p-1">El hombre gris</h5>
+              </a>
+              <p class="card-text px-1">
+                Cuando un agente de la&nbsp;CIA descubre comprometedores
+                secretos de la agencia, se enfrenta a un sociópata que lo busca
+                por todo el mundo y que le puso precio a su cabeza.
+              </p>
+            </div>
+            <div>
+              <a href="./error404.htmlml" class="d-grid nav-link"
+                ><button class="btn btn-outline-dark text-white">
+                  Mostrar más
+                </button></a
+              >
+            </div>
+          </article>
+        </aside>
+      </section>
+      <section>
+        <nav aria-label="Page navigation Series Comedia ">
+          <ul class="pagination justify-content-center pt-2">
+            <li class="page-item bg-black rounded-start-1">
+              <a
+                class="page-link bg-black border border-1 border-dark"
+                href="#"
+                aria-label="Previous"
+                ><span aria-hidden="true">&laquo;</span></a
+              >
+            </li>
+            <li class="page-item active bg-dark">
+              <a class="page-link bg-black border border-1 border-dark" href="#"
+                >1</a
+              >
+            </li>
+            <li class="page-item bg-dark">
+              <a class="page-link bg-black border border-1 border-dark" href="#"
+                >2</a
+              >
+            </li>
+            <li class="page-item bg-dark">
+              <a class="page-link bg-black border border-1 border-dark" href="#"
+                >3</a
+              >
+            </li>
+            <li class="page-item bg-dark rounded-end-1">
+              <a
+                class="page-link bg-black rounded-end-1 border border-1 border-dark"
+                href="#"
+                aria-label="Next"
+                ><span aria-hidden="true">&raquo;</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="pe-3 mb-0">
+      <section class="container text-secondary">
+        <div class="row">
+          <aside class="col-12 col-md-12 fs-2 row">
+            <div class="col-lg-2 col-md-4 mt-4">
+              <a
+                href="../index.html"
+                class="link-secondary display-3 text-decoration-none"
+                ><img
+                  src="../assets/img/Logo-del-sitio.png"
+                  alt="logo del sitio"
+                  width="160px"
+              /></a>
+            </div>
+            <div class="col-lg-10 col-md-8 mt-lg-2 pt-md-5">
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="./error404.html"
+                class="link-secondary text-decoration-none me-1"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </aside>
+        </div>
+        <div class="row mt-2">
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-3">
+                <a
+                  href="./contacto.html"
+                  class="link-secondary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./quienessomos.html"
+                  class="link-secondary text-decoration-none"
+                  >¿Quienes somos?</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-lg-3 mt-sm-2">
+                <a href="" class="link-secondary text-decoration-none"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+              <li class="mt-3">
+                <a href="" class="link-secondary text-decoration-none"
+                  >Terminos y condiciones</a
+                >
+              </li>
+              <li class="mt-3">
+                <a href="" class="link-secondary text-decoration-none">Ayuda</a>
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="./error404.html">
+                  <img
+                    src="../assets/badge-apple-store.svg"
+                    alt="link de descarga de aplicacion rn apple store"
+                  />
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="./error404.html">
+                  <img
+                    src="../assets/google-play-badge-bb.svg"
+                    alt="link de descarga de aplicacion en playstore"
+                  />
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

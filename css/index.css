@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo Inicio */
+html,
+body {
+    background-color: #000;
+}
+nav{
+  background-color: black !important;
+}
+.serie_seleccionada aside{height: 20rem;}
+.main-margin-top{
+  margin-top:65px !important;
+}
+.movie-preview {
+    background-color: #000;
+    width: 300px;
+    position: relative;
+    border-radius: .2em;
+    margin: .5em;
+}
+
+.movie-preview img {
+    width: 100%;
+}
+
+.movie-preview:hover {
+    transform: scale(1.03);
+    transition: all .3s;
+    border: solid 2px whitesmoke;
+}
+
+.movie-preview h3 {
+    background-color: #000000b3;
+    position: absolute;
+    bottom: 0;
+    padding: .25em;
+    margin: 0;
+}
+
+.roll-container {
+    min-height: 18em;
+}
+
+.roll-box-x {
+    overflow-x: scroll;
+  }
+
+.roll-box-y {
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #c2c2c2;
+}
+
+.scroll::-webkit-scrollbar-thumb:active {
+    background: #ececec;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #f7f7f7;
+    border-radius: 59px;
+}
+
+.scroll::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+.scroll::-webkit-scrollbar-track:active {
+    background: #616161;
+}
+
+.scroll::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.dropdown-item:hover{
+  color:#303030!important;
+}
+.h-40 {
+    height: 40% !important;
+}
+
+.h-30 {
+    height: 30% !important;
+}
+
+.desc-card {
+    background-color: #000;
+    color: #f5f5f5;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.banner {
+    background-image: url(https://sm.ign.com/ign_latam/tv/m/merlina/merlina_1uxr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    height: 720px;
+}
+
+.banner h2:first-letter {
+    color: #f00000;
+}
+
+.rgba-dark-1 {
+    background-color: #00000080;
+    border-radius: .5em;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.myVideoContainer {
+    width: 100%;
+    height: 600px;
+}
+
+.banner-info {
+    position: absolute;
+    height: 100%;
+    padding-bottom: 4em;
+}
+
+.barraDetalles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.bannerPromo
+{
+    background-color: #4e1012
+}
+/* Quienes Somos */
+.bgColourblack{
+    background-color: #151315;
+}
+.fontColorRed{
+    color: #ce0d15;
+}
+.bgColourGris{
+    background-color: #5C6161;
+}
+
+.btnNavbar{
+    color: white;
+    background-color: #e50914;
+}
+
+.btnNavbar:hover{
+     filter:grayscale(30%);
+  transition: 550ms;
+}
+.btnNavbar:active{
+    border-radius: 20%;
+    box-shadow: inset 0px 0px 5px 0px white;
+}
+/*tamaños*/
+@media only screen and (max-width: 991px) {
+  .serie-seleccionada-section{
+    display: block!important;
+  }
+  .banner-info{
+    position:relative!important;
+  }
+  
+    .myVideoContainer {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    iframe{
+        height:250px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .banner-info {
+    position: absolute;
+  }
+  iframe{
+    height:500px;
+  }
+}
+@media only screen and (min-width:1023px){
+    iframe{
+        height:550px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .azulimg{
+       min-height: 266px;
+    }
+    }

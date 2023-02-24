@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="generator" content="Astro v1.8.0" />
+    <meta
+      name="description"
+      content="En este sitio encontraras las mejores series y peliculas en la mejor calidad. Desde el cine a tu casa."
+    />
+    <meta
+      name="keywords"
+      content="series, peliculas, ver online, generos, terror,suspenso, comedia, drama, misterio, mejor precio, "
+    />
+    <meta
+      name="author"
+      content="Rodriguez Yanina, Joaquin Andrada, Maximiliano Vega, Azul De Pol, Cristian Gramajo"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <title>Nesflis - Inicio</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shorcut icon" href="./assets/img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-expand-sm justify-sm-content-center fixed-top"
+      >
+        <div class="container-fluid">
+          <!-- logo principal -->
+          <div class="order-1 order-sm-1 order-md-0 me-sm-6">
+            <a class="navbar-brand logoNes" href="./index.html"
+              ><img
+                src="../assets/img/Logo-del-sitio.png"
+                alt="Logo principal del sitio"
+                width="94px"
+                class="m-0"
+            /></a>
+          </div>
+          <!-- boton hambueguesa -->
+          <div class="order-0 order-sm-0 order-md-1 my-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/peliculas.html"
+                    >Peliculas</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu navbar-dark bg-dark">
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Mi lista</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/accion.html"
+                        >Acción</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/comedia.html"
+                        >Comedia</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Terror</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Drama</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Suspenso</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Documentales</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Romance</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-light"
+                        href="./pages/error404.html"
+                        >Anime</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <form class="d-flex me-2 inputdeBusqueda" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btnNavbar btn-outline-danger"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <!-- inicio de sesion y suscripcion- boton -->
+          <div class="order-2 order-md-2 mb-xs-1 mt-sm-2 text-end">
+            <a
+              href="./pages/login.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Iniciar sesion</a
+            >
+            <a
+              href="./pages/suscripcion.html"
+              class="btn btn-xs btnNavbar btn-sm btn-outline-danger"
+              >Registrarse</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section class="d-flex align-items-center flex-column">
+        <!-- banner con trailer de muestra -->
+        <div class="myVideoContainer pt-5 w-100">
+          <div id="carouselIndicators" class="carousel slide h-100">
+            <div class="carousel-indicators h-100">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner w-100">
+              <div class="carousel-item active" id="merlina">
+                <iframe
+                  class="w-100"
+                  height="h-100"
+                  src="https://www.youtube.com/embed/gmp7LTKnVPo?start=1&autoplay=1"
+                  title="Wednesday"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="carousel-item w-100">
+                <iframe
+                  class="w-100"
+                  height="100%"
+                  src="https://www.youtube.com/embed/GOrxIRRUzn4?start=1&autoplay=1"
+                  title="Black Adam"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="carousel-item h-100 w-100">
+                <iframe
+                  class="w-100"
+                  height="100%"
+                  src="https://www.youtube.com/embed/PmVlSpxR378?start=20&autoplay=1"
+                  title="Fast and Furious"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="row text-white">
+          <article
+            class="n-serie col-sm-10 col-md-8 col-lg-12 rgba-dark-1 d-flex justify-content-center align-items-end w-100"
+            id="merlina"
+          >
+            <a href="./pages/error404.html" class="btn bg-light text-dark m-2">
+              ▶ Reproducir
+            </a>
+            <a
+              href="./pages/error404.html"
+              class="btn bg-secondary text-white m-2"
+            >
+              ⓘ Mas Información
+            </a>
+          </article>
+        </div>
+      </section>
+      <section class="row m-0 bg-dark">
+        <div class="d-flex justify-content-center my-5">
+          <article class="text-white roll-container w-100">
+            <h2>Series</h2>
+            <div class="roll-box-x scroll d-flex">
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/comediaBrooklyn.html" class="text-white">
+                    <h3>Brooklyn, Precinto 99</h3>
+                    <img
+                      src="./assets/NesFlisImg/BrooklynNineNine300x200px.jpg"
+                      alt="Brooklyn Nine Nine portada de la pelicula"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Friends</h3>
+                    <img
+                      src="./assets/NesFlisImg/Friends300x200px.jpg"
+                      alt=" Portada de la pelicula Friends comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>The Good Place</h3>
+                    <img
+                      src="./assets/NesFlisImg/TheGoodPlace300x200px.jpg"
+                      alt="Portada de la pelicula The Good Place comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>The Big Bang Theory</h3>
+                    <img
+                      src="./assets/NesFlisImg/TheBigBangTheory300x200px.jpg"
+                      alt=" Portada de la pelicula The Big Bang Theory comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Young Sheldon</h3>
+                    <img
+                      src="./assets/NesFlisImg/YoungSheldon300x200px.jpg"
+                      alt="Portada de la pelicula Young Sheldon comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>The Rookie</h3>
+                    <img
+                      src="./assets/NesFlisImg/TheRookie300x200px.jpg"
+                      alt="Portada de la pelicula The Rookie comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Grace and Frankie</h3>
+                    <img
+                      src="./assets/NesFlisImg/GraceFrankie300x200px.jpg"
+                      alt="Portada de la pelicula Grace and Frankie comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Workin' Moms</h3>
+                    <img
+                      src="./assets/NesFlisImg/WorkinMoms300x200px.jpeg"
+                      alt="Portada de la pelicula Workin' Moms comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Bojack Horseman</h3>
+                    <img
+                      src="./assets/NesFlisImg/Bojack300x200px.jpg"
+                      alt="Portada de la pelicula Bojack Horseman comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Community</h3>
+                    <img
+                      src="./assets/NesFlisImg/Community300x200px.jpg"
+                      alt="Portada de la pelicula Community comedia"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <article class="text-white roll-container w-100">
+            <h2>Películas</h2>
+            <div class="roll-box-x scroll d-flex">
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/accionEnola.html" class="text-white">
+                    <h3>Enola Holmes 2</h3>
+                    <img
+                      src="./assets/NesFlisImg/EnolaHolmes2300x200px.jpg.png"
+                      alt="Portada de la pelicula Enola Holmes 2 película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Alerta Roja</h3>
+                    <img
+                      src="./assets/NesFlisImg/AlertaRoja300x200.jpeg"
+                      alt="Portada de la pelicula Alerta Roja"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Kingsman: El Servicio Secreto</h3>
+                    <img
+                      src="./assets/NesFlisImg/Kingsman300x200.jpg"
+                      alt="Portada de la pelicula Kingsman:El Servicio Secreto película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Knives Out</h3>
+                    <img
+                      src="./assets/NesFlisImg/KnivesOut300x200px.jpg"
+                      alt="Portada de la pelicula Knives Out película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Los Ilusionistas 2</h3>
+                    <img
+                      src="./assets/NesFlisImg/LosIlusionistas2300x200.jpeg"
+                      alt="Portada de la pelicula Los Ilusionistas 2 película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Limitless</h3>
+                    <img
+                      src="./assets/NesFlisImg/Limitless300x200.jpg"
+                      alt="Portada de la pelicula Limitless película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Los Juegos del Hambre</h3>
+                    <img
+                      src="./assets/NesFlisImg/JuegosdelHambre300x200.jpg"
+                      alt="Portada de la pelicula Los Juegos del Hambre película"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>El Hombre Gris</h3>
+                    <img
+                      src="./assets/NesFlisImg/ElHombreGris300x200.jpg"
+                      alt="Portada de la pelicula El Hombre Gris"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>Jumanji</h3>
+                    <img
+                      src="./assets/NesFlisImg/Jumanji2300x200.jpg"
+                      alt="Portada de la pelicula Jumanji"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="roll-scroll-h">
+                <div class="movie-preview">
+                  <a href="./pages/error404.html" class="text-white">
+                    <h3>John Wick</h3>
+                    <img
+                      src="./assets/NesFlisImg/JohnWick2300x200.jpeg"
+                      alt="Portada de la pelicula John Wick"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container-fluid bannerPromo p-4">
+        <article class="text-center text-light p-4">
+          <aside>
+            <h2>Adentrate en el mundo de Nesfis!</h2>
+            <p>
+              Disfruta lo ultimo en entretenimiento en nuestra app, con la mejor
+              calidad y desde cualquier dispositivo.
+            </p>
+          </aside>
+          <aside>
+            <a
+              href="./pages/suscripcion.html"
+              class="btn btn-xs btnNavbar btn-lg btn-outline-danger p-3"
+              >¡Suscríbete ahora!</a
+            >
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer class="pe-3 mb-0">
+      <section class="container text-secondary">
+        <div class="row">
+          <aside class="col-12 col-md-12 fs-2 row">
+            <div class="col-lg-2 col-md-4 mt-4">
+              <a
+                href="./index.html"
+                class="link-secondary display-3 text-decoration-none"
+                ><img
+                  src="./assets/img/Logo-del-sitio.png"
+                  alt="logo del sitio"
+                  width="160px"
+              /></a>
+            </div>
+            <div class="col-lg-10 col-md-8 mt-lg-2 pt-md-5">
+              <a
+                href="./pages/error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="./pages/error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a
+                href="./pages/error404.html"
+                class="link-secondary text-decoration-none me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="./pages/error404.html"
+                class="link-secondary text-decoration-none me-1"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </aside>
+        </div>
+        <div class="row mt-2">
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-3">
+                <a
+                  href="./pages/contacto.html"
+                  class="link-secondary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./pages/quienessomos.html"
+                  class="link-secondary text-decoration-none"
+                  >¿Quienes somos?</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./pages/error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-lg-3 mt-sm-2">
+                <a
+                  href="./pages/error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./pages/error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Terminos y condiciones</a
+                >
+              </li>
+              <li class="mt-3">
+                <a
+                  href="./pages/error404.html"
+                  class="link-secondary text-decoration-none"
+                  >Ayuda</a
+                >
+              </li>
+            </ul>
+          </aside>
+          <aside class="col-md-3 col-lg-4">
+            <ul class="list-unstyled">
+              <li class="mt-2">
+                <a href="./pages/error404.html">
+                  <img
+                    src="./assets/badge-apple-store.svg"
+                    alt="link de descarga de aplicacion rn apple store"
+                  />
+                </a>
+              </li>
+              <li class="mt-2">
+                <a href="./pages/error404.html">
+                  <img
+                    src="./assets/google-play-badge-bb.svg"
+                    alt="link de descarga de aplicacion en playstore"
+                  />
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
